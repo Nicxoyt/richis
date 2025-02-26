@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso - Colegio Richis</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-image: url('https://www.transparenttextures.com/patterns/old-mathematics.png');
+            background-color: #ffcc00;
+            color: #000;
+        }
+        .container {
+            text-align: center;
+            max-width: 600px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+            border: 3px solid #007bff;
+        }
+        .login-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        input {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bienvenidos al Colegio Richis</h1>
+        <p>Desde 1999, el Colegio Richis ha sido un lugar de aprendizaje, amistad y grandes recuerdos. 
+        Con una historia rica y un enfoque en la excelencia académica, nuestro colegio se ha mantenido como una de las mejores instituciones educativas. 
+        Únete a nuestra comunidad y vive la experiencia de los mejores años escolares.</p>
+    </div>
+    <div class="login-container">
+        <h2>Ingreso al Colegio Richis</h2>
+        <form action="colegio.html">
+            <input type="text" placeholder="Usuario" required>
+            <input type="password" placeholder="Contraseña" required>
+            <button type="submit">Ingresar</button>
+        </form>
+    </div>
+</body>
+</html>

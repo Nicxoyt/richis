@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Gana Dinero con Richis!</title>
+    <style>
+        body {
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            text-align: center;
+            background-color: #00FFFF;
+            color: #0000FF;
+            padding: 20px;
+            transition: background 1s, color 1s;
+        }
+        .container {
+            background: #FFFF00;
+            padding: 20px;
+            border: 5px solid #FF0000;
+            display: inline-block;
+            text-align: center;
+        }
+        h1 {
+            color: #FF0000;
+            font-size: 3em;
+            text-shadow: 2px 2px 5px black;
+        }
+        p {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1.5em;
+            color: #FFFFFF;
+            background-color: #0000FF;
+            text-decoration: none;
+            border: 3px solid #FF0000;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #FF0000;
+            border-color: #0000FF;
+        }
+        marquee {
+            font-size: 1.2em;
+            color: #FF0000;
+            font-weight: bold;
+        }
+        .hidden {
+            display: none;
+        }
+        .form-container {
+            background: #FFF;
+            padding: 20px;
+            border: 3px solid #FF0000;
+            margin-top: 20px;
+            display: inline-block;
+            text-align: left;
+        }
+        label, input {
+            display: block;
+            margin: 10px 0;
+        }
+        .dark-mode {
+            background-color: black !important;
+            color: red !important;
+            text-align: center;
+            font-size: 3em;
+            font-weight: bold;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    </style>
+    <script>
+        function mostrarFormulario() {
+            var formulario = document.getElementById("registro");
+            formulario.style.display = "block";
+        }
+        window.onload = function() {
+            document.getElementById("registro").style.display = "none";
+        };
+        function activarModoOscuro() {
+            document.body.innerHTML = "<div class='dark-mode'>SAVE THEM</div>";
+            setTimeout(function() {
+                document.body.innerHTML = "<div class='container'><h1>Juanse, felicidades. Has sido registrado y contratado.</h1><button class='button' onclick=\"redirigir()\">BUTTON</button></div>";
+            }, 3000);
+        }
+        function redirigir() {
+            window.location.href = 'richis.html';
+        }
+    </script>
+</head>
+<body>
+    <marquee>¡OFERTA ÚNICA! ¡GANA DINERO RÁPIDO Y FÁCIL!</marquee>
+    <div class="container">
+        <h1>¿Quieres trabajar?</h1>
+        <p>¡Entra a <strong>Richis</strong> y descubre cómo ganar mucho dinero fácilmente!</p>
+        <button class="button" onclick="mostrarFormulario()">¡Entra Ahora!</button>
+    </div>
+    <div id="registro" class="form-container">
+        <h2>Regístrate</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" value="Juanse" readonly>
+            <label for="numero">Número:</label>
+            <input type="tel" id="numero" name="numero" placeholder="Tu número...">
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" placeholder="Tu dirección...">
+            <button type="button" class="button" onclick="activarModoOscuro()">Registrarse</button>
+        </form>
+    </div>
+    <marquee>¡NO PIERDAS ESTA OPORTUNIDAD! ¡HAZTE RICO HOY MISMO!</marquee>
+</body>
+</html>
