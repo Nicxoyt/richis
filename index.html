@@ -7,38 +7,37 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
             background-color: white;
+            color: black;
+            margin: 0;
+            padding: 20px;
         }
-        .logo {
-            font-size: 60px;
-            font-weight: bold;
-            margin-top: 50px;
+        .logo-container {
+            text-align: center;
+            margin-top: 30px;
         }
-        .logo span:nth-child(1) { color: #4285f4; }
-        .logo span:nth-child(2) { color: #ea4335; }
-        .logo span:nth-child(3) { color: #fbbc05; }
-        .logo span:nth-child(4) { color: #4285f4; }
-        .logo span:nth-child(5) { color: #34a853; }
-        .logo span:nth-child(6) { color: #ea4335; }
-
+        .logo-container img {
+            width: 300px;
+        }
         .search-box {
-            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            margin: 20px;
         }
         input {
             width: 500px;
             padding: 10px;
-            font-size: 18px;
+            font-size: 16px;
             border: 1px solid #dfe1e5;
-            border-radius: 24px;
+            border-radius: 2px;
             outline: none;
         }
         .results {
-            width: 600px;
-            margin-top: 40px;
-            margin-left: 20px;
-            text-align: left;
+            max-width: 700px;
+            margin: 20px;
             font-size: 14px;
+            text-align: left;
+            padding-left: 20px;
         }
         .result-title {
             font-size: 18px;
@@ -50,6 +49,7 @@
         }
         .result-url {
             color: green;
+            font-size: 14px;
         }
         .result-description {
             color: #4d5156;
@@ -58,8 +58,8 @@
 </head>
 <body>
 
-    <div class="logo">
-        <span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span>
+    <div class="logo-container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ_3BWByi9-P-wE0fe0CR3G5CgR94LrBnEeA&s" alt="Google Logo">
     </div>
 
     <div class="search-box">
@@ -70,6 +70,20 @@
         <p><a href="p.html" class="result-title">richis</a></p>
         <p class="result-url">www.richis.edu</p>
         <p class="result-description">Richis es un colegio de excelencia educativa, reconocido por su innovación en la enseñanza y su compromiso con el desarrollo integral de sus estudiantes.</p>
+        
+        <hr>
+        
+        <p><a href="#" class="result-title">Historia de Richis</a></p>
+        <p class="result-url">www.richis.edu/historia</p>
+        <p class="result-description">Conoce la historia de Richis y cómo ha evolucionado a lo largo de los años.</p>
+        
+        <p><a href="#" class="result-title">Cursos y programas - Richis</a></p>
+        <p class="result-url">www.richis.edu/cursos</p>
+        <p class="result-description">Explora los cursos y programas que Richis ofrece para diferentes niveles educativos.</p>
+        
+        <p><a href="#" class="result-title">Opiniones sobre Richis</a></p>
+        <p class="result-url">www.opiniones.edu/richis</p>
+        <p class="result-description">Lee lo que dicen los estudiantes y padres sobre la experiencia en Richis.</p>
     </div>
 
 </body>
