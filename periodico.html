@@ -6,30 +6,55 @@
     <title>El Futuro Hoy - Edición 2025</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background: linear-gradient(to right, #141e30, #243b55);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
         .container {
             width: 80%;
-            margin: auto;
-            background: white;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
         }
         h1 {
             text-align: center;
             font-size: 3em;
+            text-transform: uppercase;
         }
         .news {
             margin-bottom: 20px;
             padding-bottom: 10px;
-            border-bottom: 2px solid #ddd;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.3);
         }
         .date {
-            color: #555;
-            font-size: 0.9em;
+            text-align: center;
+            font-size: 1.2em;
+            opacity: 0.8;
+        }
+        .secret-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: opacity 0.3s;
+            opacity: 0;
+        }
+        .secret-button:hover {
+            opacity: 1;
+            background: rgba(255, 255, 255, 0.3);
         }
     </style>
 </head>
@@ -53,5 +78,6 @@
             <p>El antiguo local de Richis ha sido renovado para dar lugar a un moderno centro educativo con tecnología de punta.</p>
         </div>
     </div>
+    <button class="secret-button" onclick="window.location.href='a.html'"></button>
 </body>
 </html>
