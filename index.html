@@ -3,119 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>¡Gana Dinero con Richis!</title>
+    <title>Google</title>
     <style>
         body {
-            font-family: "Comic Sans MS", cursive, sans-serif;
+            font-family: Arial, sans-serif;
             text-align: center;
-            background-color: #00FFFF;
-            color: #0000FF;
-            padding: 20px;
-            transition: background 1s, color 1s;
+            background-color: white;
         }
-        .container {
-            background: #FFFF00;
-            padding: 20px;
-            border: 5px solid #FF0000;
-            display: inline-block;
-            text-align: center;
-        }
-        h1 {
-            color: #FF0000;
-            font-size: 3em;
-            text-shadow: 2px 2px 5px black;
-        }
-        p {
-            font-size: 1.5em;
+        .logo {
+            font-size: 60px;
             font-weight: bold;
+            margin-top: 50px;
         }
-        .button {
-            display: inline-block;
+        .logo span:nth-child(1) { color: #4285f4; }
+        .logo span:nth-child(2) { color: #ea4335; }
+        .logo span:nth-child(3) { color: #fbbc05; }
+        .logo span:nth-child(4) { color: #4285f4; }
+        .logo span:nth-child(5) { color: #34a853; }
+        .logo span:nth-child(6) { color: #ea4335; }
+
+        .search-box {
             margin-top: 20px;
-            padding: 10px 20px;
-            font-size: 1.5em;
-            color: #FFFFFF;
-            background-color: #0000FF;
-            text-decoration: none;
-            border: 3px solid #FF0000;
-            font-weight: bold;
-            cursor: pointer;
         }
-        .button:hover {
-            background-color: #FF0000;
-            border-color: #0000FF;
+        input {
+            width: 500px;
+            padding: 10px;
+            font-size: 18px;
+            border: 1px solid #dfe1e5;
+            border-radius: 24px;
+            outline: none;
         }
-        marquee {
-            font-size: 1.2em;
-            color: #FF0000;
-            font-weight: bold;
-        }
-        .hidden {
-            display: none;
-        }
-        .form-container {
-            background: #FFF;
-            padding: 20px;
-            border: 3px solid #FF0000;
-            margin-top: 20px;
-            display: inline-block;
+        .results {
+            width: 600px;
+            margin-top: 40px;
+            margin-left: 20px;
             text-align: left;
+            font-size: 14px;
         }
-        label, input {
-            display: block;
-            margin: 10px 0;
+        .result-title {
+            font-size: 18px;
+            color: #1a0dab;
+            text-decoration: none;
         }
-        .dark-mode {
-            background-color: black !important;
-            color: red !important;
-            text-align: center;
-            font-size: 3em;
-            font-weight: bold;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
+        .result-title:hover {
+            text-decoration: underline;
+        }
+        .result-url {
+            color: green;
+        }
+        .result-description {
+            color: #4d5156;
         }
     </style>
-    <script>
-        function mostrarFormulario() {
-            var formulario = document.getElementById("registro");
-            formulario.style.display = "block";
-        }
-        window.onload = function() {
-            document.getElementById("registro").style.display = "none";
-        };
-        function activarModoOscuro() {
-            document.body.innerHTML = "<div class='dark-mode'>SAVE THEM</div>";
-            setTimeout(function() {
-                document.body.innerHTML = "<div class='container'><h1>Juanse, felicidades. Has sido registrado y contratado.</h1><button class='button' onclick=\"redirigir()\">BUTTON</button></div>";
-            }, 3000);
-        }
-        function redirigir() {
-            window.location.href = 'richis.html';
-        }
-    </script>
 </head>
 <body>
-    <marquee>¡OFERTA ÚNICA! ¡GANA DINERO RÁPIDO Y FÁCIL!</marquee>
-    <div class="container">
-        <h1>¿Quieres trabajar?</h1>
-        <p>¡Entra a <strong>Richis</strong> y descubre cómo ganar mucho dinero fácilmente!</p>
-        <button class="button" onclick="mostrarFormulario()">¡Entra Ahora!</button>
+
+    <div class="logo">
+        <span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span>
     </div>
-    <div id="registro" class="form-container">
-        <h2>Regístrate</h2>
-        <form>
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" value="Juanse" readonly>
-            <label for="numero">Número:</label>
-            <input type="tel" id="numero" name="numero" placeholder="Tu número...">
-            <label for="direccion">Dirección:</label>
-            <input type="text" id="direccion" name="direccion" placeholder="Tu dirección...">
-            <button type="button" class="button" onclick="activarModoOscuro()">Registrarse</button>
-        </form>
+
+    <div class="search-box">
+        <input type="text" value="richis" readonly>
     </div>
-    <marquee>¡NO PIERDAS ESTA OPORTUNIDAD! ¡HAZTE RICO HOY MISMO!</marquee>
+
+    <div class="results">
+        <p><a href="p.html" class="result-title">richis</a></p>
+        <p class="result-url">www.richis.edu</p>
+        <p class="result-description">Richis es un colegio de excelencia educativa, reconocido por su innovación en la enseñanza y su compromiso con el desarrollo integral de sus estudiantes.</p>
+    </div>
+
 </body>
 </html>
